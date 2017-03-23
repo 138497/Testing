@@ -1,0 +1,1 @@
+<mvc:resources mapping="/resources/**" location="/resources/images/, /resources/css/" />

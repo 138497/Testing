@@ -1,0 +1,217 @@
+
+
+BODY {
+	SCROLLBAR-FACE-COLOR: #AFACA9;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #E2EDC2;
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+	Background-color: #ffffff;
+}
+
+td {
+	font-family: verdana,  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight:normal;
+}
+
+.navlink {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	line-height:15px;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+.navlink:hover {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	line-height:15px;
+	font-weight: bold;
+	text-decoration:none;
+
+}
+
+
+.welcome {
+	font-family: Arial, verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	color: white;
+	line-height:16px;
+	letter-spacing: 1px;
+	font-weight:bold;
+}
+
+.txt{
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: white;
+	line-height:14px;
+	font-weight: normal;
+	text-decoration:none;
+}
+
+.txt1{
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #202932;
+	line-height:12px;
+	font-weight: normal;
+	text-decoration:none;
+	text-align: justify;
+}
+
+.input {
+	color: #000000;
+	font-size: 10px;
+	font-family: Verdana;
+	background-color: #ffffff;
+	border: 1px solid #A70C30;
+	width: 80px;
+}
+
+
+header{
+
+font-size: 9pt; 
+font-weight: normal;
+color: white;
+text-decoration:none;
+
+}
+
+
+
+.header:link    {
+
+font-size: 9pt; 
+font-weight: normal;
+color: white;
+text-decoration:none;
+};
+
+.header:visited {
+
+font-size: 9pt; 
+font-weight: normal;
+color: white;
+text-decoration:none;
+};
+
+.header:active  {
+
+font-size: 9pt; 
+font-weight: normal;
+color: white;
+text-decoration:none;
+};
+
+.header:hover   {
+color:white;
+font-size: 10pt; 
+font-weight:bold;
+text-decoration:none;};
+
+.subheader{ 
+
+font-size: 9pt; 
+font-weight: normal;
+color: Black;
+text-decoration:none;
+}
+
+.subheader:link    {
+
+font-size: 9pt; 
+font-weight: normal;
+color: Black;
+text-decoration:none;
+};
+
+.subheader:visited {
+
+font-size: 9pt; 
+font-weight: normal;
+color: Black;
+text-decoration:none;
+};
+
+.subheader:active  {
+
+font-size: 9pt; 
+font-weight: normal;
+color: black;
+text-decoration:none;
+};
+
+.subheader:hover   {
+color:Red;
+font-weight:bold;
+text-decoration:none;};
+
+.heading{ 
+
+font-size: 11pt; 
+font-weight: bold;
+color: White;
+}
+
+.thirdrow{
+background-color:"darkblue"
+}
+
+.fourthrow{
+background-color:"#444499"
+}
+
+.dashboardTableHeadclr {
+background-color:#0209A0;
+}
+.dashboardTableBgColor {
+background-color:#020990;
+}
+.tableHead { 
+ font-size: 8pt;
+ font-style: normal;
+ color: Black;
+ font-weight: bold ;
+ text-decoration: none}
+ 
+ .FolderMenu{ 
+
+font-size: 9pt; 
+font-weight:bold;
+color: black;
+text-decoration:none;
+}
+.FolderMenu:link    {
+
+font-size: 9pt; 
+font-weight:bold;
+color: Black;
+text-decoration:none;
+};
+.FolderMenu:visited {
+
+font-size: 9pt; 
+font-weight:bold;
+color: Black;
+text-decoration:none;
+};
+.FolderMenu:active  {
+
+font-size: 9pt; 
+font-weight:bold;
+color: Black;
+text-decoration:none;
+};
+.FolderMenu:hover   {
+color:black;
+font-weight:bold;
+text-decoration:none;};
+ 

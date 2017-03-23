@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.codejava.spring</groupId>
+	<artifactId>Taxi4U</artifactId>
+	<version>1.0.0</version>
+	<packaging>war</packaging>
+
+	<name>Demo - Java - Taxi4U Ver_1_0</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<java.version>1.7</java.version>
+		<spring.version>4.0.3.RELEASE</spring.version>
+		<cglib.version>2.2.2</cglib.version>
+
+		<sonar.forceAnalysis>true</sonar.forceAnalysis>
+		<sonar.language>java</sonar.language>
+		<sonar.host.url>http://10.0.0.9:9000</sonar.host.url>
+		
+		<sonar.login>sonar</sonar.login>
+		<sonar.password>sonar</sonar.password>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- Spring core & mvc to show svn change-->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- CGLib for @Configuration -->
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>${cglib.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+
+		<!-- Servlet Spec -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.3.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+    <groupId>org.jmmo</groupId>
+    <artifactId>junit-factory</artifactId>
+    <version>1.1</version>
+    <scope>test</scope>
+        </dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+    				<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.20</version>
+				</dependency>
+		</dependencies>
+
+
+	<build>
+		<finalName>Taxi4U</finalName>
+		<plugins>
+			<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>sonar-maven-plugin</artifactId>
+						<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>sql-maven-plugin</artifactId>
+        <version>1.5</version>
+
+        <dependencies>
+				<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.20</version>
+				</dependency>
+		</dependencies>
+
+        <configuration>
+          <driver>com.mysql.jdbc.Driver</driver>
+          <url>jdbc:mysql://localhost:3306</url>
+          <username>devtops</username>
+          <password>devtops</password>
+
+
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>default-cli</id>
+
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <autocommit>true</autocommit>
+              <srcFiles>
+    		  <srcFile>src/main/java/sql/MySQL_script.sql</srcFile>
+              </srcFiles>
+              <!-- sqlCommand>create database test1</sqlCommand-->
+
+            </configuration>
+          </execution>
+         </executions>
+      </plugin>
+		</plugins>
+	</build>
+</project>
